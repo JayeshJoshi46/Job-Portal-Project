@@ -11,26 +11,40 @@
   body {
       position: relative; 
   }
-  #section1 {padding-top:50px;height:650px;color: #fff;background-image:url("1.jpg");}
+  #section1 {padding-top:50px;height:650px;background-color: #f4511e;
+      color: #fff;font-family: Montserrat, sans-serif;
+}
+
   #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
   #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
   #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
   #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
 navbar navbar-inverse navbar-fixed-top{background:transparent;}
 
-#email 
+
+
+#input1
 {
-    width: 70%;
+    width: 100%;
     padding: 20px 20px;
-    margin: 250px 100px;
+    margin: 140px 100px;
     box-sizing: border-box;
 }
 
-#user_adon
+#experience
 {
     width: 70%;
     padding: 20px 20px;
-    margin: 250px 100px;
+    margin: 1% 50%;
+    box-sizing: border-box;
+}
+
+
+#user_adon
+{
+    width:10%;
+    padding: 5px 0px;
+    margin: 50px 10px;
 }
 
 
@@ -70,19 +84,24 @@ navbar navbar-inverse navbar-fixed-top{background:transparent;}
 
 <div id="section1" class="container-fluid">
 
-<form>
+  <h1 align="center">Online Job Portal</h1> 
+  <p align="center">We specialize in job searches</p> 
+  <form>
     <div class="input-group">
-      <span class="input-group-addon" id="user_adon"><i class="glyphicon glyphicon-user"></i></span>-->
-      <input id="email" type="text" class="form-control" name="email" placeholder="Job Title">
+      <input id="input1" type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
     </div>
-
-</form>
+  </form>
  
 </div>
+
+
 <div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+<h1>Section 2</h1>
+
 </div>
 <div id="section3" class="container-fluid">
   <h1>Section 3</h1>
