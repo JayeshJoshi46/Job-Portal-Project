@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   
+   
+    #section1 {background-color: #f4511e;
+      color:black;font-family: Montserrat, sans-serif;width: 1308px;}
+
+  
+    #jumb{padding-top:20px;padding-bottom:90px;background-color: transparent;/*background-image:#000 url('1.jpg');opacity:0.30;*/
+    /*text-shadow: black 0.3em 0.3em 0.3em;*/}
+
+    #jumb2{padding-top:50px;width:510px;height:290px;padding-right:40px;background-color: transparent;;padding-left:80px;color: black;
+   
+     /*background-position: 0% 25%*/}
+   
+   #section2{background-color: purple;
+      color: #fff;font-family: Montserrat, sans-serif;height:450px;}  
+
+   #section3{background-color: green;
+      color: #fff;font-family: Montserrat, sans-serif;height:450px;}  
+
+   #section4{background-color: yellow;
+      color: black;font-family: Montserrat, sans-serif; width:1308px;}  
+
+ 
+    #email,#password{width:300px;padding:20px 30px;}
+    #login_button{width:70px;}
+    
+
+ 
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 400px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: blue;
+      color: white;
+      padding: 160px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        width: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+         </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</a></li>
+        <li><a href="#">Job Seeker Module</a></li>
+        <li><a href="#">Company Module</a></li>
+        <li><a href="#">About Us</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content" id="section1">
+         
+   <div class="container">
+  <div class="jumbotron" id="jumb" >
+  <h1>Online Job Portal</h1> 
+         <h3>We are specialize in Job Search</h3><br><br>
+   <input type="text" id="input1" placeholder="Search something" size="30">         
+  <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-search"></span> Search 
+        </button>
+
+    </div>
+    </div>
+
+
+
+    <div class="col-sm-5 sidenav" id="section2">
+   
+   <h1>Job Seeker</h1>
+      
+ <div class="jumbotron" id="jumb2">
+  
+      <form>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+  </div><br>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock" id="adon_pass"></i></span>
+    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div><br>
+     <button type="button" class="btn btn-primary">Login</button><br>
+      <h4>Not a member as yet? | <a href="#">Register now</a></h4>
+    </form>
+ </div>
+    </div>
+
+
+    <div class="col-sm-7 sidenav" id="section3"> 
+      <h1>Information for Job Seekers</h1><br>
+       <h3>-You can build ur Resume here</h3><br>
+       <h3>-Upload ur resume</h3><br>
+       <h3>-u can serach here ur required job</h3><br> 
+   </div>
+    
+    </div>
+  </div>
+</div>
+
+  <div class="row content" id="section4">
+  <h1>This Block is for view company , our services , job locations ....or some additional things</h1>  
+     
+  </div>
+
+<footer class="container-fluid text-center">
+<h1 align="center">Copyrights &copy; Online Job Portal</h1>
+</footer>
+
+</body>
+</html>
+
