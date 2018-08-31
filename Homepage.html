@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ONLINE JOB PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--STYLE -->
+ <style>
+   
+   
+       #section1 
+		{	
+			background-image: url('city.jpg');
+			color:black;
+			font-family: Montserrat, sans-serif;
+			width: auto;
+			background-size: cover;
+		}
+
+  	#section8
+		{
+                        height:auto;
+			width: auto;
+			background-image: url('grey1.png');
+			background-size: cover;
+			opacity: 0.80;
+		}
+
+
+    #jumb
+     {
+        padding-top:20px;
+	padding-bottom:90px;
+	background-color: transparent;
+	/*background-image:#000 url('1.jpg');
+	opacity:0.30;*/
+       /*text-shadow: black 0.3em 0.3em 0.3em;*/
+     }
+
+    #jumb2
+     {
+	padding-top:30px;
+	width:490px;
+	height:150px;
+	
+	background-color:transparent ;
+	padding-left:90px;
+	color: white;
+     }
+
+    #jumb3
+     {  width:420px;
+	height:370px;
+	padding-left:10px;
+	padding-top:40px;
+       
+	background-color:transparent ;
+ 	color: white;
+     }
+    
+    #jumb4
+     {  width:360px;
+ 	height:370px;
+	padding-left:50px;
+	padding-top:40px;
+	background-color: transparent;
+	color: white;
+     }    
+   
+    #jumb5
+     {  width:420px;
+	height:370px;
+	padding-left:20px;
+	padding-top:40px;
+	background-color: transparent;
+	color: white;
+     }
+
+  
+   #section2
+      {
+        background-color: transparent;
+        color: #fff;
+	font-family: Montserrat, sans-serif;
+ 	height: 340px;
+      }  
+
+   #section3
+	{ background-color: transparent;
+      	  color: #fff;
+	  font-family: Montserrat, sans-serif;
+	  height: auto;
+	}  
+
+   #section4
+	{
+           background-image: url('navyblue.jpg');
+      	   
+	   font-family: Montserrat, sans-serif;
+	   width: auto;
+           height: auto;
+           background-size:cover;
+	}  
+
+   #section5{background-color: transparent;width:auto;}
+
+   #section6{background-color: transparent;width:auto;}
+
+   #section7{background-color: transparent;width:auto;}
+ 
+
+   #email,#password{width:300px;padding:20px 30px;}
+   
+   #login_button{width:340px;}
+    
+
+ 
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar 
+     {
+      margin-bottom:0;
+      border-radius: 0;
+      padding-top: auto; 
+      padding-bottom: auto;
+     }
+
+    navbar ul,h5,li
+     {
+	font-size: 14px;
+	color:white;
+     }
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    row content {height:auto; width: auto}
+    
+    
+    /* Set gray background color and 100% height */
+    sidenav 
+     {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 400%;
+     }
+    
+    
+    /* Set black background color, white text and some padding */
+    footer 
+    {
+      background-color: gray;
+      color: white;
+      padding: 160px;
+    }
+    
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen {max-width: auto} 
+      
+      sidenav 
+         {
+        height: auto;
+        width: auto;
+        padding: 15px;
+       }
+       
+      
+ 
+
+</style>
+</head>
+
+
+<!-- BODY -->
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+  </div>
+    
+  <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home">HOME</a></li>
+        <li><a href="#">JOB SEEKER MODULE</a></li>
+        <li><a href="#">COMPANY MODULE</a></li>
+      
+       	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        
+ 	<li><a href="#">ABOUT US</a></li>
+
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> UPLOAD RESUME</a>
+        <li><h5>New to Job Portal?<br>&nbsp&nbsp&nbsp&nbsp
+         <a href="#">Register Now</a></h5>
+       	</li>
+      	</ul>
+  </div>
+  </div>
+</nav>
+  
+  
+<!-- ROW wise and column wise portion's-->
+  <div class="container-fluid text-center is-Responsive">
+  
+<!--ROW NO. 1-->
+  <div class="row content" id="section1">
+  <div class="container">
+  <div class="jumbotron" id="jumb">
+  	<h1>Online Job Portal</h1> 
+  	<h3>We are specialize in Job Search</h3><br><br>
+  	<input type="text" id="input1" placeholder="Search something" size="30">         
+  	<button type="button" class="btn btn-default btn-sm">
+        	<span class="glyphicon glyphicon-search"></span> Search 
+        </button>
+  </div>
+  </div>
+  </div>
+
+<!--ROW NO. 2-->
+  <div class="row content" id="section8">
+  <div class="col-sm-5" id="section2">
+   
+  <center><h1>JOB SEEKER</h1></center>
+      
+  <div class="jumbotron" id="jumb2">
+  
+  <form>
+  
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+  </div><br>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock" id="adon_pass"></i></span>
+    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+  </div><br>
+     
+  <center><button type="button" class="btn btn-info btn-lg" id="login_button">
+    <span class="glyphicon glyphicon-log-in"></span> Log in</button><br><br>
+      Not a member as yet? | <a href="#">Register now</a></center>
+   
+  </form>
+  </div>
+  </div>
+
+
+  <div class="col-sm-7" id="section3"> 
+       <h1>Information for Job Seekers</h1><br>
+       <h3>-You can build ur Resume here</h3><br>
+       <h3>-Upload ur resume</h3><br>
+       <h3>-u can serach here ur required job</h3><br> 
+  </div>
+  </div>
+  
+
+<!--ROW NO. 3-->
+  <div class="row content" id="section4">
+  <div class="col-sm-4" id="section5">
+  <div class="jumbotron" id="jumb3">
+       
+        <img src="company1.jpg" class="img-rounded" alt="Cinque Terre" width="380" height="220"><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#"><h3>View Companies</h3></a>  
+     
+  </div>
+  </div>
+   
+  <div class="col-sm-4" id="section6">
+  <div class="jumbotron" id="jumb4">
+        <img src="job_postings.jpg" class="img-circle" alt="Cinque Terre" width="240" height="200"><br><br> 
+        &nbsp&nbsp<a href="#"><h3>View Job Postings</h3></a>
+  </div>  
+  </div>
+
+    
+  <div class="col-sm-4" id="section7">
+  <div class="jumbotron" id="jumb5">
+       
+    <img src="guide.jpg" class="img-rounded" alt="Cinque Terre" width="380" height="220"> 
+    &nbsp&nbsp<a href=""><h3>Career Guidence By Job Portal</h3></a>     
+   
+  </div>
+  </div>
+         <!-- Drop downlist  
+          1.how to buil well formatted resume 
+          2.how to prepare for interviews
+          3.how to prepare CV 
+           -->
+   
+  </div>
+  </div>
+
+<!-- FOOTER Portion-->
+ <footer class="container-fluid text-center">
+	<h1 align="center">Copyrights &copy; Online Job Portal</h1>
+ </footer>
+
+ </body>
+ </html>
+
