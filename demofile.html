@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="css/style.css">
+
+  <title>Company Registration form @ Online Job Portal</title>
+
+<script type="text/javascript">
+  function hello()
+  { 
+    alert("Registration Successfully !!!");
+    window.location.href="Homepage.html";
+    
+   }
+</script>
+  
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
+
+<style>
+
+.container
+  {height:1000px;}
+
+footer 
+    {
+      background-color: gray;
+      color: white;
+      padding: 1px;
+      height:60px;
+      
+    }
+
+    navbar ul,h5,li
+     {
+	font-size: 14px;
+	color:white;
+     }
+
+body {background:url(darkblue.jpg)}
+
+
+</style>  
+
+</head>
+  
+
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+  </div>
+    
+  <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home">HOME</a></li>
+        <li><a href="#">JOB SEEKER MODULE</a></li>
+        <li><a href="#">COMPANY MODULE</a></li>
+      
+       	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        
+ 	<li><a href="#">ABOUT US</a></li>
+
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> UPLOAD RESUME</a>
+        <li><h5>New to Job Portal?<br>&nbsp&nbsp&nbsp&nbsp
+         <a href="#">Register Now</a></h5>
+       	</li>
+      	</ul>
+  </div>
+  </div>
+</nav>
+
+
+<div class="container">
+<center><h1>Company Registration Form</h1></center>
+
+  <!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Company Details</li>
+    <li>Area Details</li>
+    <li>Contact Details and Choose Password</li>
+    
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Company Details</h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+    <input type="text" name="email" placeholder="Name of Company" />
+    
+    <input type="text" name="cpass" placeholder="Industry Type" />
+    <input type="text" name="cpass" placeholder="Company Website" />
+    
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Area Details</h2>
+    <h3 class="fs-subtitle">Step 2</h3>
+    
+    <input type="text" name="cpass" placeholder="Comany Street Address" />
+<input type="text" name="cpass" placeholder="City" />
+<input type="text" name="cpass" placeholder="State" />
+<input type="text" name="cpass" placeholder="Pincode" />
+
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  
+ <fieldset>
+    <h2 class="fs-title">Contact Details and Choose Password</h2>
+    <h3 class="fs-subtitle">Step 3</h3>
+    <b>Person Of Contact</b>
+    <input type="text" name="fname" placeholder="First name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <b>Person Designation</b>
+    <input type="text" name="fname" placeholder="Designation" />
+    <b>Contact Number</b>
+    <input type="text" name="phone" placeholder="### ### ####" />
+    <b>Email Id</b>
+     <input type="text" name="phone" placeholder="Email Id" />
+    <b>Choose Password</b>
+      <input type="password" name="phone" placeholder="Choose Password" />   
+    <b>Confirm Password</b>
+      <input type="password" name="phone" placeholder="Confirm Password" />   
+ 
+   
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input id="sub" type="submit" name="submit" class="submit action-button" value="Submit" onclick="hello()" />
+  </fieldset>
+ 
+</form>
+   
+
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+   <script  src="js/index.js"></script>
+
+</div>
+
+<footer>
+  <center><h1>Copyrights</h1></center>
+</footer>
+
+</body>
+
+</html>
