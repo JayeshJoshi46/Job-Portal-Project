@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ONLINE JOB PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--STYLE -->
+ <style>
+   
+   
+       #section1 
+		{	
+			background-image: url('city.jpg');
+			color:black;
+			font-family: Montserrat, sans-serif;
+			width: auto;
+			background-size: cover;
+		}
+
+  	#section8
+		{
+                        height:auto;
+			width: auto;
+			background-image: url('grey1.png');
+			background-size: cover;
+			opacity: 0.80;
+		}
+
+
+    #jumb
+     {
+        padding-top:20px;
+	padding-bottom:90px;
+	background-color: transparent;
+   }
+
+   #email,#password{width:auto;padding:20px 30px;}
+   
+   #login_button{width:auto;}
+    
+    
+ /*Footer Portion*/
+   #footer_col1
+	{background-color:red;
+	 height:370px;
+         background-color:transparent; 
+
+        }
+
+   #footer_col2
+      {
+        background-color:orange;
+        height:370px;
+	background-color:transparent;
+      } 
+
+
+   #footer_col3
+      {
+        background-color:green;
+	height:370px;
+        background-color:transparent;
+      } 
+   
+
+   a{color:white;}
+
+
+   
+
+   /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar 
+     {
+      margin-bottom:0;
+      border-radius: 0;
+      padding-top: auto; 
+      padding-bottom: auto;
+     }
+
+    navbar ul,h5,li
+     {
+	font-size: 14px;
+	color:white;
+     }
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    row content {height:auto; width: auto}
+    
+    
+    /* Set gray background color and 100% height */
+    sidenav 
+     {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 400%;
+     }
+    
+    
+    
+     
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen {max-width: auto} 
+      
+      sidenav 
+         {
+        height: auto;
+        width: auto;
+        padding: 15px;
+       }
+       
+      
+ 
+
+</style>
+</head>
+
+
+<!-- BODY -->
+<body>
+  
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color: #e3f2fd; font-size:25px;">Jortal</a>
+  </div>
+    
+  <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        <li class="active"><a href="Homepage.html"><span class="glyphicon glyphicon-home">HOME</a></li>
+        
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        JOB SEEKER MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">JOB SEEKER LOGIN</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Search required Jobs</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+        
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        COMPANY MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Company_login.html">Employer's Login</a></li>
+          <li><a href="company_reg.html">Not a member?Then Register here</a></li>
+          <li><a href="#">View companies</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      
+       	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        
+ 	<li><a href="#">ABOUT US</a></li>
+
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        <li><a href="Company_login.html">COMPANY LOGIN</a>
+        <li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> UPLOAD RESUME</a>
+        <li><h5>New to Job Portal?<br>&nbsp&nbsp&nbsp&nbsp
+         <a href="#">Register Now</a></h5>
+       	</li>
+      	</ul>
+  </div>
+  </div>
+</nav>
+   
+ 
+  
+  <div class="jumbotron text-center">
+  <h1>Online Job Portal</h1> 
+  <p>We specialize in Job Search</p> 
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="80" placeholder="Search for Jobs" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+  
+ </body>
+ </html>
+
