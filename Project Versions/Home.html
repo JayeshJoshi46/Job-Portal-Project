@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ONLINE JOB PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--STYLE -->
+ <style>
+   
+   
+	#row1 
+		{	
+			background-image: url('city.jpg');
+			color:black;
+			font-family: Montserrat, sans-serif;
+			width: auto;
+			background-size: cover;
+		}
+
+
+	#row2
+		{
+                        height:auto;
+			width: auto;
+			background-image: url('grey1.png');
+			background-size: cover;
+			
+		}
+
+
+	#row21
+      		{
+			background-color: transparent;
+			color: #fff;
+			font-family: Montserrat, sans-serif;
+		 	height: 340px;
+      		}  
+      		
+      		
+      	#row22
+		{ 	background-color: transparent;
+      	  		color: white;
+	  		font-family: Montserrat, sans-serif;
+	  		height: auto;
+		}  
+
+	#row3
+		{
+			background-image: url('grey1.png');
+			font-family: Montserrat, sans-serif;
+			width: auto;
+			height: auto;
+			background-size:cover;
+		}  
+
+	#row31{background-color: red;height: 300px}
+
+	#row32{background-color: yellow;height: 300px}
+
+	#row33{background-color: blue;height: 300px}
+	
+	
+	
+	#row4
+		{
+			background-image: url('grey1.png');
+			font-family: Montserrat, sans-serif;
+			width: auto;
+			height: auto;
+			background-size:cover;
+		}  
+
+	
+	
+	#row41{height: 300px}
+
+	#row42{height: 300px}
+
+	#row43{height: 300px}
+
+	#jumb
+     		{
+			padding-top:20px;
+			padding-bottom:90px;
+			background-color: transparent;
+   		}
+   		
+   	#jumb2
+     		{
+			padding-top:20px;
+			padding-bottom:90px;			
+			background-color:transparent ;
+			color: white;
+			width:	auto;
+			height: auto;
+     		}
+
+	#jumb3
+     		{  
+		     	width:auto;
+			height:auto;
+			padding-left:10px;
+			padding-top:40px;  
+			background-color:transparent ;
+		 	color: white;
+     		}
+    
+    	#jumb4
+     		{  
+		     	width:auto;
+			height:auto;
+			padding-left:50px;
+			padding-top:40px;
+			background-color: transparent;
+			color: white;
+     		}    
+   
+    	#jumb5
+     		{  
+		     	width:auto;
+			height:auto;
+			padding-left:20px;
+			padding-top:40px;
+			background-color: transparent;
+			color: white;
+     		}
+
+   	#coljumb1
+     		{	
+			width:auto;
+			padding-top:15px;
+			background-color:transparent;
+			color: white;
+     		}
+
+
+  	#coljumb2
+     		{   
+			 width:auto;
+			 padding-top:15px;
+			 background-color:transparent;
+			 color: white;
+     		}
+
+
+   	#coljumb3
+     		{   
+			 width:auto;
+			 padding-top:15px;
+			 background-color:transparent;
+			 color: white;
+     		}
+
+
+   /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar 
+     {
+      margin-bottom:0;
+      border-radius: 0;
+      padding-top: auto; 
+      padding-bottom: auto;
+     }
+
+    navbar ul,h5,li
+     {
+	font-size: 14px;
+	color:white;
+     }
+    
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    row content {height:auto; width: auto}
+    
+    
+    /* Set gray background color and 100% height */
+    sidenav 
+     {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 400%;
+     }
+    
+    
+    a{color:white;}
+    
+    h2{color:white;}
+     
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen {max-width: auto} 
+      
+      sidenav 
+         {
+        height: auto;
+        width: auto;
+        padding: 15px;
+       }
+       
+     
+	
+</style>
+</head>
+
+
+<!-- BODY -->
+<body>
+  
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color: #e3f2fd; font-size:25px;">Jortal</a>
+  </div>
+    
+  <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        <li class="active"><a href="Homepage.html"><span class="glyphicon glyphicon-home">HOME</a></li>
+        
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        JOB SEEKER MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">JOB SEEKER LOGIN</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Search required Jobs</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+        
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        COMPANY MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Company_login.html">Employer's Login</a></li>
+          <li><a href="company_reg.html">Not a member?Then Register here</a></li>
+          <li><a href="#">View companies</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      
+       	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        
+ 	<li><a href="#">ABOUT US</a></li>
+
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        <li><a href="Company_login.html">COMPANY LOGIN</a>
+        <li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> UPLOAD RESUME</a>
+        <li><h5>New to Job Portal?<br>&nbsp&nbsp&nbsp&nbsp
+         <a href="#">Register Now</a></h5>
+       	</li>
+      	</ul>
+  </div>
+  </div>
+</nav>
+   
+ 
+<!--Row 1--> 
+<div class="container-fluid text-center is-Responsive">      
+  <div class="row content" id="row1">
+  	<div class="container">
+  		<div class="jumbotron text-center" id="jumb">
+ 			 <h1>Online Job Portal</h1> 
+  			 <p>We specialize in Job Search</p> 
+  				<form class="form-inline">
+   					 <div class="input-group">
+					      <input type="email" class="form-control" size="80" placeholder="Search for Jobs" required>
+					 <div class="input-group-btn">
+					      <button type="button" class="btn btn-danger">Search</button>
+					 </div>
+					 </div>
+				</form>
+		</div>
+	</div>
+  </div>
+
+
+<!--Row 2-->
+
+
+  <div class="row content" id="row2">
+  	<div class="col-sm-5" id="row21">
+   		<center><h1>JOB SEEKER</h1></center>
+   		
+   			<div class="jumbotron text-center" id="jumb2">
+			  <form class="form-inline">
+			  
+				    <div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+				    <input id="email" type="text" class="form-control" name="email" placeholder="Email Id">
+				    </div><br><br>
+				    
+				    <div class="input-group">
+				    <span class="input-group-addon"><i class="glyphicon glyphicon-lock" id="adon_pass"></i></span>
+				    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+				    </div><br><br>
+				    
+				    <center><button type="button" class="btn btn-info btn-lg" id="login_button">
+			     	    <span class="glyphicon glyphicon-log-in"></span>Log in</button><br><br>
+			            Not a member as yet? | <a href="#">Register now</a></center>
+			  
+			  </form>
+			  </div>
+	</div>	
+   		
+
+	<div class="col-sm-7" id="row22"> 
+	       <h1>Information for Job Seekers</h1><br>
+	       <h3>- You can build ur Resume here</h3><br>
+	       <h3>- Upload ur resume</h3><br>
+	       <h3>- u can serach here ur required job</h3><br> 
+  	</div>	
+  </div>
+  
+  
+
+  
+  
+  <!--Row 3-->
+  
+  <div class="row content" id="row3">
+
+  	<div class="col-sm-4" id="row31">
+  		<div class="jumbotron" id="jumb3">
+        		<img src="" class="img-rounded" alt="Cinque Terre" width="380" height="220"><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#"><h3>View Companies</h3></a>  
+     
+     
+ 		</div>
+  	</div>
+   
+  	<div class="col-sm-4" id="row32">
+  		<div class="jumbotron" id="jumb4">
+<!--			<img src="job_postings.jpg" class="img-circle" alt="Cinque Terre" width="240" height="200"><br><br> -->
+        &nbsp&nbsp<a href="#"><h3>View Job Postings</h3></a>
+  </div>  
+		</div>  
+ 	
+
+    
+  	<div class="col-sm-4" id="row33">
+  		<div class="jumbotron" id="jumb5">   
+<!--			<img src="guide.jpg" class="img-rounded" alt="Cinque Terre" width="380" height="220"> -->
+    &nbsp&nbsp<a href=""><h3>Career Guidence By Job Portal</h3></a>     
+  		</div>
+  	</div>
+         <!-- Drop downlist  
+          1.how to buil well formatted resume 
+          2.how to prepare for interviews
+          3.how to prepare CV 
+           -->
+   
+  </div>
+  </div>
+  
+  
+  <!--Row 4-->
+  
+  
+  
+<div class="container-fluid text-center is-Responsive">       
+  <div class="row content" id="row4">
+  	<div class="col-sm-4" id="row41">
+  		<div class="jumbotron" id="coljumb1">
+        		<legend><center><h2>Information</h2></center></legend>
+			   	<a href="#"><h4>About Us</h4></a>
+				<a href="#"><h4>Terms & conditions</h4></a>
+				<a href="#"><h4>Privacy Policy</h4></a>      
+				<a href="#"><h4>Contact Us</h4></a>
+  		</div>
+  	</div>
+   
+  	<div class="col-sm-4" id="row42">
+  		<div class="jumbotron" id="coljumb2">
+			<legend><center><h2>Jobseekers</h2></center></legend>
+				<a href="#"><h4>Register now</h4></a>
+				<a href="#"><h4>Search Jobs</h4></a>
+				<a href="#"><h4>Login</h4></a>      
+				<a href="#"><h4>Report Problem</h4></a>
+		</div>
+ 	</div>	
+ 	
+
+    
+  	<div class="col-sm-4" id="row43">
+  		<div class="jumbotron" id="coljumb3">   
+			<legend><center><h2>Employers</h2></center></legend>
+				<a href="#"><h4>Login</h4></a>
+				<a href="#"><h4>Not a member as yet? Then Register here</h4></a>
+				<a href="#"><h4>Post Jobs</h4></a>      
+				<a href="#"><h4>Report Problem</h4></a>
+    		</div>
+  	</div>		
+   
+  </div>
+  </div>
+  </div>
+ 
+<div class="navbar navbar-inverse ">
+ <div class="container-fluid">
+ <div class="navbar">
+ <center><h2>Copyright &copy; Jortal</h2></center>
+ </div>
+ </div>
+ </div>
+ 
+</body>
+</html>
+
