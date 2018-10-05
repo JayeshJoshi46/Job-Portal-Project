@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Company_Registration_form @ ONLINE JOB PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+body{background:url('off-white.png')}
+
+#dropdown{width:350px;}
+
+.required{color:red;}
+
+row content {height:auto; width: auto}
+
+
+    navbar ul,h5,li
+     {
+	font-size: 14px;
+	color:white;
+     }
+  
+
+   #jumb
+     { width:500px;
+       height:1400px;
+       padding-top:15px;
+       background-image:url('aquablue.jpg');
+       
+     }
+  
+
+ .container{
+  width:500px;
+  height:1500px
+  }
+
+.jumbotron .container {
+  max-width: 100%;
+}
+
+
+   /*Footer Portion*/
+   #footer_col1
+	{background-color:red;
+	 height:370px;
+         background-color:transparent; 
+
+        }
+
+   #footer_col2
+      {
+        background-color:orange;
+        height:370px;
+	background-color:transparent;
+      } 
+
+
+   #footer_col3
+      {
+        background-color:green;
+	height:370px;
+        background-color:transparent;
+      } 
+
+
+
+   #coljumb1
+     {	color:black;
+         width:390px;
+         height:360px;
+        padding-top:15px;
+        background-color:transparent;
+     }
+
+  #coljumb2
+     {   color:black;
+         width:390px;
+         height:360px;
+         padding-top:15px;
+	 background-color:transparent;
+     }
+
+
+   #coljumb3
+     {   color:black;
+         width:390px;
+         height:360px;
+	 padding-top:15px;
+	 background-color:transparent;
+     }
+
+ 
+   footer 
+    {
+      background-color: gray;
+      color: white;
+      padding-top: 20px;
+      height:350px;
+   
+    }
+   
+
+   a{color:white;}
+
+
+
+
+ 
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+  </div>
+    
+  <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        <li class="active"><a href="Homepage.html"><span class="glyphicon glyphicon-home">HOME</a></li>
+        
+	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        JOB SEEKER MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">JOB SEEKER LOGIN</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Search required Jobs</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+        
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        COMPANY MODULE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Company_login.html">Employer's Login</a></li>
+          <li><a href="company_reg.html">Not a member?Then Register here</a></li>
+          <li><a href="#">View companies</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      
+
+      
+       	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+        
+ 	<li><a href="#">ABOUT US</a></li>
+
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        <li><a href="Company_login.html">COMPANY LOGIN</a>
+        <li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> UPLOAD RESUME</a>
+        <li><h5>New to Job Portal?<br>&nbsp&nbsp&nbsp&nbsp
+         <a href="#">Register Now</a></h5>
+       	</li>
+      	</ul>
+  </div>
+  </div>
+</nav>
+
+
+<div class="container">
+<center><h1>&nbsp&nbspCompany Registration Form</h1></center>
+
+
+<div class="jumbotron" id="jumb">
+ <div class="row content" id="row">
+   <center><h2>Welcome to Registration</h2></center>
+ </div>
+
+Register your business by using this form.Fields are marked with an asterisk (*) are compulsory.<br><br>
+  <form method="POST" action="companydata.php">
+ <div class="container">
+
+<legend><center>COMPANY DETAILS</center></legend>
+<b>Company Name<span class="required">*</span></b>
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-briefcase" id="adon_user"></i></span>
+    
+    <input id="email" type="text" class="form-control" name="name" placeholder="COMPANY NAME" size="50">
+  </div><br>
+
+<!--<b>Industry Type<span class="required">*</span></b>-->
+
+<!--<div class="dropdown">-->
+<!--    -->
+<!--    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Industry-->
+<!--    <span class="caret"></span></button>-->
+<!--    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">-->
+<!--      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IT-Software</a></li>-->
+<!--      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Banking</a></li>-->
+<!--      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>-->
+<!--      -->
+<!--      -->
+<!--    </ul>-->
+<!--  </div><br>-->
+
+<b>Industry Type<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="type" placeholder="Street Address" size="50">
+  </div><br>
+
+
+
+
+ <b>Company mailing address<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="addr" placeholder="Street Address" size="50">
+  </div><br>
+
+<b>City<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-road" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="city" placeholder="City" size="50">
+  </div><br>
+
+<b>State<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-road" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="state" placeholder="State" size="50">
+  </div><br>
+	
+<b>Pincode/Zip code<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="pincode" placeholder="Pincode" size="50">
+  </div><br><br>
+
+
+<legend><center>CONTACT DETAILS</center></legend>
+<b>Person Of Contact<span class="required">*</span></b>(Super User)
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="fname" placeholder="First Name" size="50">
+  </div><br>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="lname" placeholder="Last Name" size="50">
+  </div><br>
+
+ <b>Person's Designation<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="desig" placeholder="Designation" size="50">
+  </div><br>
+
+
+
+<b>Contact number<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="contact" placeholder="### ### ####" size="50">
+  </div><br>
+
+ <b>Email Id<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="pemail" placeholder="Email Id" size="50">
+  </div><br><br>
+
+<legend><center>LOGIN DETAILS</center></legend>
+
+  <b>Login Id<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-user" id="adon_user"></i></span>
+    <input id="email" type="text" class="form-control" name="loginid" placeholder="Login Id" size="50">
+  </div><br>
+
+  
+  <b>Choose Password<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-lock" id="adon_user"></i></span>
+    <input id="email" type="password" class="form-control" name="password1" placeholder="Choose Password" size="50">
+  </div><br>
+
+ <b>Confirm Password<span class="required">*</span></b>
+  <div class="input-group">
+   <span class="input-group-addon"><i class="glyphicon glyphicon-lock" id="adon_user"></i></span>
+    <input id="email" type="password" class="form-control" name="password2" placeholder="Confirm Password" size="50">
+  </div><br>
+
+    <center><button type="submit" class="btn btn-primary">Proceed</button></center>
+
+</div>
+</form>
+
+</div>
+
+
+</div>
+
+<!-- FOOTER Portion-->
+ <footer class="container-fluid text-center">
+  <div class="col-sm-4" id="footer_col1">
+    <div class="jumbotron" id="coljumb1">
+    <legend><center><h2>Information</h2></center></legend>
+   	<a href="#"><h4>About Us</h4></a>
+        <a href="#"><h4>Terms & conditions</h4></a>
+	<a href="#"><h4>Privacy Policy</h4></a>      
+        <a href="#"><h4>Contact Us</h4></a>
+  </div>
+  </div>
+
+  
+  <div class="col-sm-4" id="footer_col2">
+     <div class="jumbotron" id="coljumb2">
+    <legend><center><h2>Jobseekers</h2></center></legend>
+        <a href="#"><h4>Register now</h4></a>
+        <a href="#"><h4>Search Jobs</h4></a>
+	<a href="#"><h4>Login</h4></a>      
+        <a href="#"><h4>Report Problem</h4></a>
+
+     </div>
+  </div>	
+
+  <div class="col-sm-4" id="footer_col3">
+     <div class="jumbotron" id="coljumb3">
+    <legend><center><h2>Employers</h2></center></legend>
+        <a href="#"><h4>Login</h4></a>
+        <a href="#"><h4>Not a member as yet? Then Register here</h4></a>
+	<a href="#"><h4>Post Jobs</h4></a>      
+        <a href="#"><h4>Report Problem</h4></a>
+
+    </div>
+  </div>		
+
+ </footer>
+
+<h1 align="center">Copyrights &copy; Online Job Portal</h1>
+
+
+
+
+
+
+</body>
+</html>
