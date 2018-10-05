@@ -1,1 +1,2 @@
+ create table company_reg(company_name varchar(30),industry_type varchar(30),company_addr text,city varchar(30),state varchar(30),pincode varchar(6),per_firstname varchar(30),per_lastname varchar(30),per_designation varchar(30),contact_no varchar(10),email_id text,login_id varchar(30),choose_password varchar(30),conf_password varchar(30));
 
