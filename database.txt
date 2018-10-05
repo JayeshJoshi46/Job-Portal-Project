@@ -1,0 +1,71 @@
+psql (9.5.14)
+Type "help" for help.
+
+postgres=# \c onlinejobportal;
+You are now connected to database "onlinejobportal" as user "postgres".
+onlinejobportal=# \d
+               List of relations
+ Schema |       Name        | Type  |  Owner   
+--------+-------------------+-------+----------
+ public | company_reg       | table | postgres
+ public | jobseeker_company | table | postgres
+ public | jobseeker_reg     | table | postgres
+(3 rows)
+
+onlinejobportal=# \d company_reg
+             Table "public.company_reg"
+     Column      |         Type          | Modifiers 
+-----------------+-----------------------+-----------
+ company_id      | integer               | not null
+ company_name    | character varying(50) | 
+ industry_type   | character varying(20) | 
+ company_addr    | text                  | 
+ city            | character varying(20) | 
+ state           | character varying(20) | 
+ pincode         | character varying(6)  | 
+ per_firstname   | character varying(30) | 
+ per_lastname    | character varying(30) | 
+ per_designation | character varying(20) | 
+ contact_no      | character varying(10) | 
+ email_id        | text                  | 
+ login_id        | character varying(30) | 
+ choose_password | character varying(15) | 
+ conf_password   | character varying(15) | 
+Indexes:
+    "company_reg_pkey" PRIMARY KEY, btree (company_id)
+Referenced by:
+    TABLE "jobseeker_company" CONSTRAINT "jobseeker_company_company_id_fkey" FOREIGN KEY (company_id) REFERENCES company_reg(company_id)
+
+onlinejobportal=# \d jobseeker_reg
+             Table "public.jobseeker_reg"
+      Column      |         Type          | Modifiers 
+------------------+-----------------------+-----------
+ jobseeker_id     | integer               | not null
+ first_name       | character varying(50) | 
+ middle_name      | character varying(50) | 
+ last_name        | character varying(50) | 
+ email_id         | text                  | 
+ current_location | text                  | 
+ contact_no       | character varying(10) | 
+ total_exp        | integer               | 
+ industry         | character varying(30) | 
+ document         | text                  | 
+Indexes:
+    "jobseeker_reg_pkey" PRIMARY KEY, btree (jobseeker_id)
+Referenced by:
+    TABLE "jobseeker_company" CONSTRAINT "jobseeker_company_jobseeker_id_fkey" FOREIGN KEY (jobseeker_id) REFERENCES jobseeker_reg(jobseeker_id)
+
+onlinejobportal=# \d jobseeker_company
+  Table "public.jobseeker_company"
+    Column    |  Type   | Modifiers 
+--------------+---------+-----------
+ jobcomp_id   | integer | not null
+ jobseeker_id | integer | 
+ company_id   | integer | 
+Indexes:
+    "jobseeker_company_pkey" PRIMARY KEY, btree (jobcomp_id)
+Foreign-key constraints:
+    "jobseeker_company_company_id_fkey" FOREIGN KEY (company_id) REFERENCES company_reg(company_id)
+    "jobseeker_company_jobseeker_id_fkey" FOREIGN KEY (jobseeker_id) REFERENCES jobseeker_reg(jobseeker_id)
+
+
